@@ -1,9 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
+# Weather-App
+ <img src="https://github.com/emrecanAy/react-contextapi-weather-app/blob/master/public/eskisehir-day.png">
+ <img src="https://github.com/emrecanAy/react-contextapi-weather-app/blob/master/public/eskisehir-night.png">
 In the project directory, you can run:
 
 ### `npm start`
