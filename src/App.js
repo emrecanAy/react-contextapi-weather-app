@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import SelectCity from "./components/SelectCity/SelectCity";
+import SelectTime from "./components/SelectTime";
+import WeatherCast from "./components/WeatherCast";
+import { TimeProvider } from "./context/TimeContext";
+import { WeatherProvider } from "./context/WeatherContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <WeatherProvider>
+        <TimeProvider>
+          <Header />
+          <div className="select">
+            <SelectCity />
+          </div>
+          <div className="time">
+            <SelectTime/>
+          </div>
+          <div>
+            <WeatherCast />
+          </div>
+        </TimeProvider>
+      </WeatherProvider>
+    </>
   );
 }
 
