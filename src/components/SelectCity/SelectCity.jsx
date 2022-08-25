@@ -15,7 +15,7 @@ function SelectCity() {
 
   const getWeatherData = async (latitude, longitude) => {
     const url = "https://api.openweathermap.org/data/2.5/";
-    const key = process.env.REACT_APP_API_KEY;
+    const key = "8c0d23e6c755c3663deed98460541ce0";
     try {
       const { data } = await axios.get(
         `${url}onecall?lat=${latitude}&lon=${longitude}&units=metric&exclude=current,minutely,hourly,alerts&appid=${key}`
