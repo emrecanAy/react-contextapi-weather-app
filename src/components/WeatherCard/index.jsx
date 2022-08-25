@@ -15,7 +15,7 @@ function WeatherCard({day, imgSource, description, temp, main }) {
         cover={<img alt={description} src={imgSource} title={description} />}
       >
         <Meta title={day} description={description} />
-        <div>{temp +" "+ main}</div>
+        <div>{temp +"°C "+ main}</div>
       </Card>
     </div>
   );
